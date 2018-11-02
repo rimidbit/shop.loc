@@ -1,0 +1,23 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    font-size: 12px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #666666;
+    font-size: 1.2em;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    font-size: 200px;
+}
+
+a {
+    text-decoration: none;
+}
