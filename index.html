@@ -7,18 +7,21 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/aside.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <script> defersr = ""</script>
 </head>
 <body>
     <header class="header">
         <div class="top-line">
             <div class="top-line__menu">
-                <a href="#">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
-                        <use xlink:href="img/icons/signin(2).svg#signin"></use>
-                    </svg>
-                    Вход</a>
-                <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                    <use xlink:href="img/icons/signin(2).svg#signin"></use>
+                </svg>
+                <a href="#">Вход</a>
+                <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                     <use xlink:href="img/icons/heart.svg#heart"></use>
                 </svg>
                     Избранное</a>
@@ -26,28 +29,59 @@
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 44">
                         <use xlink:href="img/icons/comparE.svg#compare"></use>
                     </svg>
-                    сравнение</a>
+                    Сравнение</a>
             </div>
             <div class="top-line__social-button">
-                <a href="https://vk.com"><img src="img" alt="vk"></a>
-                <a href="https://www.facebook.com"><img src="img" alt="fb"></a>
-                <a href="https://twitter.com"><img src="img" alt="tv"></a>
+                <a href="https://vk.com">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 64">
+                        <use xlink:href="img/icons/vk.svg#vk"></use>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 64">
+                        <use xlink:href="img/icons/facebook.svg#fb"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 64">
+                        <use xlink:href="img/icons/twitter_sign.svg#tw"></use>
+                    </svg>
+                </a>
             </div>
         </div>
-        <div class="header__logo">
-            <img src="img" alt="logo">
-        </div>
-        <div class="header__contacts">
-            <address><img src="img" alt=""><a href="tel:88002222222">8(800)222-22-22</a></address>
-            <address><img src="img" alt=""><a href="mailto:shop@shop.ru">shop@shop.ru</a></address>
-        </div>
-        <form action="search" method="get" class="header__form-search">
-            <input name="s" placeholder="Искать здесь..." type="search" class="header__form-search__input">
-            <button type="submit" class="header__form-search__button">Поиск</button>
-        </form>
-        <div class="header__car">
-            <output>7500 p.</output>
-            <a href="#"><img src="img" alt="basket"></a>
+        <div class="header__center">
+            <div class="header__logo">
+                <a href="index.html">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568 568">
+                        <use xlink:href="img/icons/trail-running-shoe.svg#sneakers"></use>
+                    </svg>
+                    <span>НА-СТАРТЕ<br>обувь для спорта<br>и фитнеса</span>
+                </a>
+            </div>
+            <div class="header__contacts">
+                <address>
+                    <a href="tel:88002222222">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64">
+                            <use xlink:href="img/icons/phone.svg#phone"></use>
+                        </svg>
+                        8(800)222-22-22</a>
+                </address>
+                <address>
+                    <a href="mailto:shop@shop.ru">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <use xlink:href="img/icons/envelope_alt.svg#envelope_alt"></use>
+                        </svg>
+                        shop@shop.ru</a>
+                </address>
+            </div>
+            <form action="search" method="get" class="header__form-search">
+                <input name="s" placeholder="Искать здесь..." type="search" class="header__form-search__input">
+                <button type="submit" class="header__form-search__button">Поиск</button>
+            </form>
+            <div class="header__car">
+                <output>7500 p.</output>
+                <a href="#"><img src="img" alt="basket"></a>
+            </div>
         </div>
         <nav class="header__top-nav">
             <a href="#">Главная</a>
@@ -57,129 +91,143 @@
             <a href="#">Контакты</a>
         </nav>
     </header>
-    <main class="main">
-        <div class="main__slider">
-            Здесь будет слайдер
-        </div>
-        <div>
-            <div class="main__nav-block">
-                <img src="img" alt="icon">
-                <span>Продажа</span>
-                <span>Широкий ассортимент моделей</span>
+    <div class="main-general">
+        <main class="main">
+            <div class="main-content">
+                <div class="main__slider">
+                    Здесь будет слайдер
+                </div>
+                <div class="main__nav-block">
+                    <div class="nav-block__items">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 64">
+                            <use xlink:href="img/icons/credit_card.svg#credit_card"></use>
+                        </svg>
+                        <span class="nav-block__items-head">Продажа</span>
+                        <span class="nav-block__items-accent">Широкий ассортимент моделей</span>
+                    </div>
+                    <div class="nav-block__items">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <use xlink:href="img/icons/thumbs_up_alt.svg#thumbs_up_alt"></use>
+                        </svg>
+                        <span about="nav-block__items-head">Скидки</span>
+                        <span class="nav-block__items-accent">Невообразимо низкие цены</span>
+                    </div>
+                    <div class="nav-block__items">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <use xlink:href="img/icons/gift.svg#gift"></use>
+                        </svg>
+                        <span class="nav-block__items-head">Акции</span>
+                        <span class="nav-block__items-accent">Широкий ассортимент моделей</span>
+                    </div>
+                </div>
+                <section class="main__products-new">
+                    <h2>новинки</h2>
+                    <div class="products-new__items">
+                    <figure class="main__products-new__item">
+                        <img src="img" alt="">
+                        <figcaption>название</figcaption>
+                        <span>1000 p</span>
+                        <form action="#">
+                            <button>в корзину</button>
+                            <button><img src="#" alt=""></button>
+                        </form>
+                    </figure>
+                    <figure class="main__products-new__item">
+                        <img src="img" alt="">
+                        <figcaption>название</figcaption>
+                        <span>1000 p</span>
+                        <form action="#">
+                            <button>в корзину</button>
+                            <button><img src="#" alt=""></button>
+                        </form>
+                    </figure>
+                    <figure class="main__products-new__item">
+                        <img src="img" alt="">
+                        <figcaption>название</figcaption>
+                        <span>1000 p</span>
+                        <form action="#">
+                            <button>в корзину</button>
+                            <button><img src="#" alt=""></button>
+                        </form>
+                    </figure>
+                    <figure class="main__products-new__item">
+                        <img src="img" alt="">
+                        <figcaption>название</figcaption>
+                        <span>1000 p</span>
+                        <form action="#">
+                            <button>в корзину</button>
+                            <button><img src="#" alt=""></button>
+                        </form>
+                    </figure>
+                    </div>
+                </section>
+                <section class="main__products-sale">
+                    <h2>товары со скидкой</h2>
+                    <div class="products-sale__items">
+                    <figure class="main__products-sale__item">
+                        <img src="img" alt="">
+                        <figcaption>название</figcaption>
+                        <span>1000 p</span>
+                        <form action="#">
+                            <button>в корзину</button>
+                            <button><img src="#" alt=""></button>
+                        </form>
+                    </figure>
+                    <figure class="main__products-sale__item">
+                        <img src="img" alt="">
+                        <figcaption>название</figcaption>
+                        <span>1000 p</span>
+                        <form action="#">
+                            <button>в корзину</button>
+                            <button><img src="#" alt=""></button>
+                        </form>
+                    </figure>
+                    <figure class="main__products-sale__item">
+                        <img src="img" alt="">
+                        <figcaption>название</figcaption>
+                        <span>1000 p</span>
+                        <form action="#">
+                            <button>в корзину</button>
+                            <button><img src="#" alt=""></button>
+                        </form>
+                    </figure>
+                    <figure class="main__products-sale__item">
+                        <img src="img" alt="">
+                        <figcaption>название</figcaption>
+                        <span>1000 p</span>
+                        <form action="#">
+                            <button>в корзину</button>
+                            <button><img src="#" alt=""></button>
+                        </form>
+                    </figure>
+                    </div>
+                </section>
             </div>
-            <div class="main__nav-block">
-                <img src="img" alt="icon">
-                <span>Скидки</span>
-                <span>Невообразимо низкие цены</span>
-            </div>
-            <div about="main__nav-block">
-                <img src="img" alt="icon">
-                <span>Акции</span>
-                <span>Широкий ассортимент моделей</span>
-            </div>
-        </div>
-        <section class="main__products-new">
-        <h2>новинки</h2>
-            <figure class="main__products-new__item">
-                <img src="img" alt="">
-                <figcaption>название</figcaption>
-                <span>1000 p</span>
-                <form action="#">
-                    <button>в корзину</button>
-                    <button><img src="#" alt=""></button>
-                </form>
-            </figure>
-            <figure class="main__products-new__item">
-                <img src="img" alt="">
-                <figcaption>название</figcaption>
-                <span>1000 p</span>
-                <form action="#">
-                    <button>в корзину</button>
-                    <button><img src="#" alt=""></button>
-                </form>
-            </figure>
-            <figure class="main__products-new__item">
-                <img src="img" alt="">
-                <figcaption>название</figcaption>
-                <span>1000 p</span>
-                <form action="#">
-                    <button>в корзину</button>
-                    <button><img src="#" alt=""></button>
-                </form>
-            </figure>
-            <figure class="main__products-new__item">
-                <img src="img" alt="">
-                <figcaption>название</figcaption>
-                <span>1000 p</span>
-                <form action="#">
-                    <button>в корзину</button>
-                    <button><img src="#" alt=""></button>
-                </form>
-            </figure>
-        </section>
-        <section class="main__products-sale">
-            <h2>товары со скидкой</h2>
-            <figure class="main__products-sale__item">
-                <img src="img" alt="">
-                <figcaption>название</figcaption>
-                <span>1000 p</span>
-                <form action="#">
-                    <button>в корзину</button>
-                    <button><img src="#" alt=""></button>
-                </form>
-            </figure>
-            <figure class="main__products-sale__item">
-                <img src="img" alt="">
-                <figcaption>название</figcaption>
-                <span>1000 p</span>
-                <form action="#">
-                    <button>в корзину</button>
-                    <button><img src="#" alt=""></button>
-                </form>
-            </figure>
-            <figure class="main__products-sale__item">
-                <img src="img" alt="">
-                <figcaption>название</figcaption>
-                <span>1000 p</span>
-                <form action="#">
-                    <button>в корзину</button>
-                    <button><img src="#" alt=""></button>
-                </form>
-            </figure>
-            <figure class="main__products-sale__item">
-                <img src="img" alt="">
-                <figcaption>название</figcaption>
-                <span>1000 p</span>
-                <form action="#">
-                    <button>в корзину</button>
-                    <button><img src="#" alt=""></button>
-                </form>
-            </figure>
-        </section>
-    </main>
-    <aside class="aside">
-        <nav class="aside__nav">
-            <h2>Категории</h2>
-            <ul>
-                <li><a href="#">Вечерние</a></li>
-                <li><a href="#">Свадебные</a></li>
-                <li><a href="#">Бальные</a></li>
-                <li><a href="#">Повседневные</a></li>
-                <li><a href="#">Особенные</a></li>
-                <li><a href="#">Обыкновенные</a></li>
-                <li><a href="#">Оригинальные</a></li>
-                <li><a href="#">Космические</a></li>
-            </ul>
-        </nav>
-        <img class="aside__banner" src="img" alt="banner1">
-        <img class="aside__banner" src="img" alt="banner2">
-    </aside>
+        </main>
+        <aside class="aside">
+            <nav class="aside__nav">
+                <h2>Категории</h2>
+                <ul>
+                    <li><a href="#">Вечерние</a></li>
+                    <li><a href="#">Свадебные</a></li>
+                    <li><a href="#">Бальные</a></li>
+                    <li><a href="#">Повседневные</a></li>
+                    <li><a href="#">Особенные</a></li>
+                    <li><a href="#">Обыкновенные</a></li>
+                    <li><a href="#">Оригинальные</a></li>
+                    <li><a href="#">Космические</a></li>
+                </ul>
+            </nav>
+            <img class="aside__banner" src="img" alt="banner1">
+            <img class="aside__banner" src="img" alt="banner2">
+        </aside>
+    </div>
     <footer class="footer">
         <div class="footer__logo">
             <img src="img" alt="logo">
         </div>
-        <div class="footer__menu">
-            <h3>меню</h3>
+        <div class="footer__item">
+            <h3>Меню</h3>
             <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Каталог</a></li>
@@ -188,25 +236,25 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </div>
-        <div class="footer__payment">
-            <h3>способы оплаты</h3>
+        <div class="footer__item">
+            <h3>Способы оплаты</h3>
             <ul>
                 <li><a href="#">Наличными</a></li>
                 <li><a href="#">Карточкой</a></li>
                 <li><a href="#">В кредит</a></li>
             </ul>
         </div>
-        <div class="footer__contacts">
-            <h3>контакты</h3>
+        <div class="footer__item">
+            <h3>Контакты</h3>
             <ul>
                 <li>Телефон: <address><a href="tel:88002222222">8(800)222-22-22</a></address></li>
                 <li>E-mail: <address><a href="mailto:shop@shop.rushop@shop.ru">shop@shop.ru</a></address></li>
                 <li>Адрес: <address>г.Москва ул.Ленина 128</address></li>
             </ul>
         </div>
-        <small>&copy; shop.ru
-            <time datetime="2018">2018</time>
-        </small>
     </footer>
+    <small class="footer__copyright">&copy; shop.ru
+        <time datetime="2018">2018</time>
+    </small>
 </body>
 </html>
