@@ -17,10 +17,10 @@
     <header class="header">
         <div class="top-line">
             <div class="top-line__menu">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                     <use xlink:href="img/icons/signin(2).svg#signin"></use>
                 </svg>
-                <a href="#">Вход</a>
+                Вход</a>
                 <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                     <use xlink:href="img/icons/heart.svg#heart"></use>
                 </svg>
@@ -51,36 +51,46 @@
         </div>
         <div class="header__center">
             <div class="header__logo">
-                <a href="index.html">
+                <a class="header__logo-img" href="index.html">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568 568">
                         <use xlink:href="img/icons/trail-running-shoe.svg#sneakers"></use>
                     </svg>
-                    <span>НА-СТАРТЕ<br>обувь для спорта<br>и фитнеса</span>
                 </a>
+                <span class="header__logo-text">НА-СТАРТЕ<br>обувь для спорта<br>и фитнеса</span>
             </div>
             <div class="header__contacts">
-                <address>
-                    <a href="tel:88002222222">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64">
-                            <use xlink:href="img/icons/phone.svg#phone"></use>
+                <div class="header__contacts-address">
+                    <address class="header__contacts-address__tel">
+                        <a href="tel:88002222222">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64">
+                                <use xlink:href="img/icons/phone.svg#phone"></use>
+                            </svg>
+                            8(800)222-22-22</a>
+                    </address>
+                    <address>
+                        <a href="mailto:shop@shop.ru">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <use xlink:href="img/icons/envelope_alt.svg#envelope_alt"></use>
+                            </svg>
+                            shop@shop.ru</a>
+                    </address>
+                </div>
+                <form action="search" method="get" class="header__form-search">
+                    <input name="s" placeholder="Искать здесь..." type="search" class="header__form-search__input">
+                    <button type="submit" class="header__form-search__button">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.2 485.2">
+                            <use xlink:href="img/icons/magnifier-tool.svg#tool"></use>
                         </svg>
-                        8(800)222-22-22</a>
-                </address>
-                <address>
-                    <a href="mailto:shop@shop.ru">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                            <use xlink:href="img/icons/envelope_alt.svg#envelope_alt"></use>
-                        </svg>
-                        shop@shop.ru</a>
-                </address>
+                    </button>
+                </form>
             </div>
-            <form action="search" method="get" class="header__form-search">
-                <input name="s" placeholder="Искать здесь..." type="search" class="header__form-search__input">
-                <button type="submit" class="header__form-search__button">Поиск</button>
-            </form>
             <div class="header__car">
                 <output>7500 p.</output>
-                <a href="#"><img src="img" alt="basket"></a>
+                <a href="#">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                        <use xlink:href="img/icons/shopping_cart.svg#cart"></use>
+                    </svg>
+                </a>
             </div>
         </div>
         <nav class="header__top-nav">
@@ -99,66 +109,165 @@
                 </div>
                 <div class="main__nav-block">
                     <div class="nav-block__items">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 64">
-                            <use xlink:href="img/icons/credit_card.svg#credit_card"></use>
-                        </svg>
-                        <span class="nav-block__items-head">Продажа</span>
-                        <span class="nav-block__items-accent">Широкий ассортимент моделей</span>
+                        <a href="#">
+                            <h2 class="nav-block__items-head">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 64">
+                                    <use xlink:href="img/icons/credit_card.svg#credit_card"></use>
+                                </svg>Продажа
+                            </h2>
+                            <span class="nav-block__items-accent">Широкий ассортимент моделей</span>
+                        </a>
                     </div>
                     <div class="nav-block__items">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                            <use xlink:href="img/icons/thumbs_up_alt.svg#thumbs_up_alt"></use>
-                        </svg>
-                        <span about="nav-block__items-head">Скидки</span>
-                        <span class="nav-block__items-accent">Невообразимо низкие цены</span>
+                        <a href="#">
+                            <h2 class="nav-block__items-head">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <use xlink:href="img/icons/thumbs_up_alt.svg#thumbs_up_alt"></use>
+                                </svg>Скидки
+                            </h2>
+                            <span class="nav-block__items-accent">Невообразимо низкие цены</span>
+                        </a>
                     </div>
                     <div class="nav-block__items">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                            <use xlink:href="img/icons/gift.svg#gift"></use>
-                        </svg>
-                        <span class="nav-block__items-head">Акции</span>
-                        <span class="nav-block__items-accent">Широкий ассортимент моделей</span>
+                        <a href="#">
+                            <h2 class="nav-block__items-head">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <use xlink:href="img/icons/gift.svg#gift"></use>
+                                </svg>Акции
+                            </h2>
+                            <span class="nav-block__items-accent">Широкий ассортимент моделей</span>
+                        </a>
                     </div>
                 </div>
                 <section class="main__products-new">
                     <h2>новинки</h2>
                     <div class="products-new__items">
-                    <figure class="main__products-new__item">
-                        <img src="img" alt="">
-                        <figcaption>название</figcaption>
-                        <span>1000 p</span>
-                        <form action="#">
-                            <button>в корзину</button>
-                            <button><img src="#" alt=""></button>
-                        </form>
-                    </figure>
-                    <figure class="main__products-new__item">
-                        <img src="img" alt="">
-                        <figcaption>название</figcaption>
-                        <span>1000 p</span>
-                        <form action="#">
-                            <button>в корзину</button>
-                            <button><img src="#" alt=""></button>
-                        </form>
-                    </figure>
-                    <figure class="main__products-new__item">
-                        <img src="img" alt="">
-                        <figcaption>название</figcaption>
-                        <span>1000 p</span>
-                        <form action="#">
-                            <button>в корзину</button>
-                            <button><img src="#" alt=""></button>
-                        </form>
-                    </figure>
-                    <figure class="main__products-new__item">
-                        <img src="img" alt="">
-                        <figcaption>название</figcaption>
-                        <span>1000 p</span>
-                        <form action="#">
-                            <button>в корзину</button>
-                            <button><img src="#" alt=""></button>
-                        </form>
-                    </figure>
+                        <figure class="main__products-new__item">
+                            <figcaption>название</figcaption>
+                            <img src="img/krossovki-reebok-classic.jpg" alt="krossovki-reebok-classic">
+                            <span>1000 p</span>
+                            <form action="#">
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                            <use xlink:href="img/icons/shopping_cart.svg#cart"></use>
+                                        </svg>в корзину
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                            <use xlink:href="img/icons/bolt.svg#bolt"></use>
+                                        </svg>
+                                    </a>
+                                </button>
+                            </form>
+                        </figure>
+                        <figure class="main__products-new__item">
+                            <figcaption>название</figcaption>
+                            <img src="img/krossovki-reebok-classic.jpg" alt="krossovki-reebok-classic">
+                            <span>1000 p</span>
+                            <form action="#">
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                            <use xlink:href="img/icons/shopping_cart.svg#cart"></use>
+                                        </svg>в корзину
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                            <use xlink:href="img/icons/bolt.svg#bolt"></use>
+                                        </svg>
+                                    </a>
+                                </button>
+                            </form>
+                        </figure>
+                        <figure class="main__products-new__item">
+                            <figcaption>название</figcaption>
+                            <img src="img/krossovki-reebok-classic.jpg" alt="krossovki-reebok-classic">
+                            <span>1000 p</span>
+                            <form action="#">
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                            <use xlink:href="img/icons/shopping_cart.svg#cart"></use>
+                                        </svg>в корзину
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                            <use xlink:href="img/icons/bolt.svg#bolt"></use>
+                                        </svg>
+                                    </a>
+                                </button>
+                            </form>
+                        </figure>
+                        <figure class="main__products-new__item">
+                            <figcaption>название</figcaption>
+                            <img src="img/krossovki-reebok-classic.jpg" alt="krossovki-reebok-classic">
+                            <span>1000 p</span>
+                            <form action="#">
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                            <use xlink:href="img/icons/shopping_cart.svg#cart"></use>
+                                        </svg>в корзину
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                            <use xlink:href="img/icons/bolt.svg#bolt"></use>
+                                        </svg>
+                                    </a>
+                                </button>
+                            </form>
+                        </figure>
+                        <figure class="main__products-new__item">
+                            <figcaption>название</figcaption>
+                            <img src="img/krossovki-reebok-classic.jpg" alt="krossovki-reebok-classic">
+                            <span>1000 p</span>
+                            <form action="#">
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                            <use xlink:href="img/icons/shopping_cart.svg#cart"></use>
+                                        </svg>в корзину
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                            <use xlink:href="img/icons/bolt.svg#bolt"></use>
+                                        </svg>
+                                    </a>
+                                </button>
+                            </form>
+                        </figure>
+                        <figure class="main__products-new__item">
+                            <figcaption>название</figcaption>
+                            <img src="img/krossovki-reebok-classic.jpg" alt="krossovki-reebok-classic">
+                            <span>1000 p</span>
+                            <form action="#">
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                            <use xlink:href="img/icons/shopping_cart.svg#cart"></use>
+                                        </svg>в корзину
+                                    </a>
+                                </button>
+                                <button>
+                                    <a href="#">
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                            <use xlink:href="img/icons/bolt.svg#bolt"></use>
+                                        </svg>
+                                    </a>
+                                </button>
+                            </form>
+                        </figure>
                     </div>
                 </section>
                 <section class="main__products-sale">
@@ -206,8 +315,8 @@
         </main>
         <aside class="aside">
             <nav class="aside__nav">
-                <h2>Категории</h2>
-                <ul>
+                <h2 class="aside__nav-header">Категории</h2>
+                <ul class="aside__nav-items">
                     <li><a href="#">Вечерние</a></li>
                     <li><a href="#">Свадебные</a></li>
                     <li><a href="#">Бальные</a></li>
@@ -218,13 +327,22 @@
                     <li><a href="#">Космические</a></li>
                 </ul>
             </nav>
-            <img class="aside__banner" src="img" alt="banner1">
-            <img class="aside__banner" src="img" alt="banner2">
+            <a href="#">
+                <img class="aside__banner" src="img/baner-basket.jpg" alt="banner1">
+            </a>
+            <a href="#">
+                <img class="aside__banner" src="img/121662eb82.jpg" alt="banner2">
+            </a>
         </aside>
     </div>
     <footer class="footer">
         <div class="footer__logo">
-            <img src="img" alt="logo">
+            <a class="footer__logo-img" href="index.html">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568 568">
+                    <use xlink:href="img/icons/trail-running-shoe.svg#sneakers"></use>
+                </svg>
+            </a>
+            <span class="footer__logo-text">НА-СТАРТЕ<br>обувь для спорта<br>и фитнеса</span>
         </div>
         <div class="footer__item">
             <h3>Меню</h3>

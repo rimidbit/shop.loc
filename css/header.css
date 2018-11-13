@@ -1,70 +1,137 @@
 .top-line{
     background-color: #f4f4f4;
-    padding: 0 40px;
     display: flex;
-    flex-flow: row nowrap;
+    align-self: center;
     justify-content: space-between;
-    align-items: center;
+    max-width: 1240px;
+    min-height: 40px;
 }
 
-.top-line a{
-    color: black;
-    padding: 10px 20px;
+.top-line__menu .icon, .top-line__social-button .icon{
+    font-size: 1em;
 }
 
-.top-line__menu {
-    margin: 15px;
-    flex-flow: row nowrap;
-    align-items: center;
+.top-line__social-button a .top-line__menu a{
+    padding: 1em;
+}
+
+.top-line__menu{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+}
+
+.top-line__menu .icon{
+    padding-right: 5px;
 }
 
 .top-line__menu a{
-    align-items: center;
+    display: flex;
+    align-self: center;
     border-right: 1px solid #cecece;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    padding-right: 30px;
 }
 
 .top-line__menu a:nth-child(3){
     border-right: none;
 }
 
-.top-line__menu .icon{
-    font-size: 15px;
-    align-self: center;
+.top-line__social-button{
+    width: 150px;
+    padding-right: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .top-line__social-button .icon{
-    font-size: 20px;
+    font-size: 1.4em;
 }
+
 /*center*/
 .header__center{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .header__center .icon{
-    font-size: 10px;
+    font-size: 1em;
 }
 
 .header__logo .icon {
     font-size: 100px;
-    padding-left: 15px;
+    padding-left: 20px;
     color: #145ba3;
 }
 
-.header__logo a{
+.header__logo-text{
+    margin-left: 5px;
+}
+
+.header__logo {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .header__contacts{
-    flex-flow: row nowrap;
+    margin: 0 100px;
+    flex-grow: 1;
+}
+
+.header__contacts-address{
+    display: flex;
     justify-content: flex-start;
-    max-width: 500px;
+    align-self: center;
+}
+
+.header__contacts-address address a{
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts-address .icon{
+    padding-right: 5px;
+}
+
+.header__contacts-address__tel{
+    padding-right: 10px;
+}
+
+.header__form-search{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    border: 1px solid #cecece;
+}
+
+.header__form-search__input{
+    flex-grow: 1;
+}
+
+.header__form-search__button{
+    width: 50px;
+    height: 35px;
+    background-color: #f4f4f4;
+    border: 1px solid #cecece;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.header__car{
+    margin-right: 20px;
+    border: 1px solid #cecece;
+    display: flex;
+    justify-content: center;
+    /*align-self: baseline;*/
+}
+
+.header__car .icon{
+    font-size: 1.8em;
 }
 
 .header__top-nav{

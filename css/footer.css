@@ -16,3 +16,23 @@
     color: #000;
     margin: 10px 0;
 }
+
+.footer__logo .icon {
+    font-size: 100px;
+    padding-left: 15px;
+    color: #145ba3;
+}
+
+.footer__logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.footer__copyright{
+    display: block;
+    padding: 0.6em;
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+}

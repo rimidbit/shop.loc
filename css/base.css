@@ -4,7 +4,8 @@ html {
 
 body {
     font-size: 14px;
-    max-width: 1200px;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -21,4 +22,10 @@ h2 {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+figure{
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
