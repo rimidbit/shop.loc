@@ -1,5 +1,5 @@
-.main-content{
-    max-width: 1020px;
+.main{
+    flex-basis: 100%;
 }
 
 .main-general{
