@@ -3,11 +3,11 @@
     padding: 30px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .footer__item h3{
-    font-size: 1.2em;
+    font-size: 1.5em;
     border-bottom: 1px solid #ffffff;
     margin-bottom: 10px;
 }
@@ -19,7 +19,7 @@
 
 .footer__logo .icon {
     font-size: 100px;
-    padding-left: 15px;
+    padding-left: 20px;
     color: #145ba3;
 }
 
@@ -27,6 +27,30 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__logo-text{
+    margin-left: 5px;
+}
+
+.footer__menu{
+    margin-left: 80px;
+    width: 100px;
+}
+
+.footer__payment{
+    margin-left: 100px;
+    width: 200px;
+}
+
+.footer__contacts{
+    margin-left: 110px;
+    width: 300px;
+}
+
+.footer__contacts-list li{
+    display: flex;
 }
 
 .footer__copyright{
