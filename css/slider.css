@@ -1,4 +1,4 @@
-.main__slider{
-    max-height: 300px;
+.main__carousel{
+    max-width: 100%;
     border: #cecece;
 }
