@@ -1,4 +1,13 @@
 .main__carousel{
+    margin-top: 30px;
     max-width: 100%;
     border: #cecece;
+}
+
+.carousel-slide img{
+    width: 200px;
+}
+
+.carousel-slide{
+    max-width: 100%;
 }
