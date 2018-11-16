@@ -4,6 +4,21 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
+    position: relative;
+}
+
+.footer:after{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    left: -50vw;
+    right: -50vw;
 }
 
 .footer__item h3{
@@ -59,4 +74,19 @@
     background-color: #000;
     color: #ffffff;
     text-align: center;
+    position: relative;
+}
+
+.footer__copyright:after{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    left: -50vw;
+    right: -50vw;
 }

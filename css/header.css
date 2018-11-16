@@ -4,9 +4,24 @@
     align-self: center;
     justify-content: space-between;
     min-height: 40px;
+    position: relative;
 }
 
-.top-line__menu .icon, .top-line__social-button .icon{
+.top-line:after{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    left: -50vw;
+    right: -50vw;
+}
+
+.top-line__menu .icon{
     font-size: 1em;
 }
 
@@ -109,16 +124,23 @@
 
 .header__form-search__input{
     flex-grow: 1;
+    border: thin solid #cecece;
+    border-right: none;
 }
 
 .header__form-search__button{
-    width: 50px;
+    padding: 0 25px;
     height: 35px;
     background-color: #f4f4f4;
-    border: 1px solid #cecece;
+    border: thin solid #cecece;
+    border-left: none;
     display: flex;
     justify-content: center;
     align-self: center;
+}
+
+.header__form-search__button .icon{
+    font-size: 1.3em;
 }
 
 .header__car{
@@ -136,6 +158,21 @@
 .header__top-nav{
     background-color: #145ba3;
     padding: 10px 20px;
+    position: relative;
+}
+
+.header__top-nav:after{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    left: -50vw;
+    right: -50vw;
 }
 
 .header__top-nav a{

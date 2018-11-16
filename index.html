@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Магазин</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+    <link href="node_modules/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
@@ -11,7 +13,9 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/aside.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    <script> defersr = ""</script>
+    <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer src="node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script defer src="js/slider.js"></script>
 </head>
 <body>
     <header class="header">
@@ -104,8 +108,10 @@
     <div class="main-general">
         <main class="main">
             <div class="main-content">
-                <div class="main__slider">
-                    Здесь будет слайдер
+                <div class="main__carousel">
+                    <div class="carousel-slid"></div>
+                    <div class="carousel-slid"></div>
+                    <div class="carousel-slid"></div>
                 </div>
                 <div class="main__nav-block">
                     <div class="nav-block__items">
