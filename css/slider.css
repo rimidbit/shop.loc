@@ -1,13 +1,36 @@
-.main__carousel{
+.carousel{
     margin-top: 30px;
-    max-width: 100%;
+    max-width: 960px;
+}
+
+.carousel-slide{
     border: #cecece;
+    display: inline-block;
+}
+
+.carousel__text{
+    margin-left: 60px;
+}
+
+.carousel__text h1{
+    font-size: 2em;
+    color: #666666;
+}
+
+.carousel__text h2{
+    color: #145ba3;
+    margin-bottom: 10px;
+}
+
+.carousel__text a{
+    color: #ff824a;
+    display: inline-block;
+    border: 1px solid #145ba3;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .carousel-slide img{
     width: 200px;
-}
-
-.carousel-slide{
-    max-width: 100%;
+    margin: 10px 50px;
 }
