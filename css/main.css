@@ -37,6 +37,11 @@
     margin-right: 5px;
 }
 
+.main__products-new h2{
+    margin: 15px 0;
+    border-bottom: 1px solid #cecece;
+}
+
 .products-new__items{
     display: flex;
     justify-content: space-between;
@@ -117,6 +122,11 @@
 
 .products-new__form__button-fast{
     margin-left: 2px;
+}
+
+.main__products-sale h2{
+    margin: 15px 0;
+    border-bottom: 1px solid #cecece;
 }
 
 .products-sale__items{
